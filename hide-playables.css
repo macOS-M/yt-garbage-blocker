@@ -1,0 +1,11 @@
+/*playable garbage*/
+ytd-rich-section-renderer:has(ytd-rich-shelf-renderer #rich-shelf-header a:is([href="/playables"], [href^="/playables?"])),
+ytd-rich-shelf-renderer:has(#rich-shelf-header a:is([href="/playables"], [href^="/playables?"])) {
+  display: none !important;
+}
+
+/*shorts garbage*/
+ytd-rich-section-renderer:has(ytd-rich-shelf-renderer a[href^="/shorts/"]),
+ytd-rich-shelf-renderer:has(a[href^="/shorts/"]) {
+  display: none !important;
+}

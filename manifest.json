@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Hide YouTube Playables and Shorts",
+  "version": "1.1.0",
+  "description": "Hides the Playables and Shorts shelves on YouTube.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "css": ["hide-playables.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
